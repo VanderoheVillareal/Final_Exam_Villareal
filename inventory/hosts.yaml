@@ -1,0 +1,14 @@
+all:
+  children:
+    ubuntu_servers:
+      hosts:
+        ubuntu-control:
+          ansible_connection: local
+          ansible_python_interpreter: /usr/bin/python3
+
+    centos_servers:
+      hosts:
+        centos-node:
+          ansible_host: 192.168.56.137
+          ansible_user: villareal
+          ansible_python_interpreter: /usr/bin/python3

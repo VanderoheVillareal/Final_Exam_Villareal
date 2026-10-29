@@ -1,0 +1,13 @@
+---
+ansible_user_name: "Villareal"
+
+enterprise_service:
+  name: "Apache Web Server"
+  ubuntu_package: "apache2"
+  centos_package: "httpd"
+
+monitoring:
+  name: "Prometheus Node Exporter"
+  version: "1.9.1"
+  port: 9100
+  architecture: "amd64"
